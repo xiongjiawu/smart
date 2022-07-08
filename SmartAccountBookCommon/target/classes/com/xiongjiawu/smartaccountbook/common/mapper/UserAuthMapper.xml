@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiongjiawu.smartaccountbook.common.dao.UserAuthMapper">
+    <resultMap id="BaseResultMap" type="com.xiongjiawu.smartaccountbook.common.model.UserAuth">
+        <!--系统-用户认证表 -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="clientType" property="clientType" jdbcType="VARCHAR"/>
+        <result column="userId" property="userId" jdbcType="INTEGER"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="userSecret" property="userSecret" jdbcType="VARCHAR"/>
+        <result column="accessToken" property="accessToken" jdbcType="VARCHAR"/>
+        <result column="tokenExpire" property="tokenExpire" jdbcType="TIMESTAMP"/>
+        <result column="userAgent" property="userAgent" jdbcType="VARCHAR"/>
+        <result column="clientIp" property="clientIp" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="createBy" property="createBy" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="updateBy" property="updateBy" jdbcType="VARCHAR"/>
+        <result column="updateTime" property="updateTime" jdbcType="TIMESTAMP"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+      `id`, `clientType`, `userId`, `username`, `userSecret`, `accessToken`, `tokenExpire`, `userAgent`, `clientIp`, `status`, `createBy`, `createTime`, `updateBy`, `updateTime`, `remark`      
+    </sql>
+    <sql id="Base_Column_List_t">
+      t.`id`, t.`clientType`, t.`userId`, t.`username`, t.`userSecret`, t.`accessToken`, t.`tokenExpire`, t.`userAgent`, t.`clientIp`, t.`status`, t.`createBy`, t.`createTime`, t.`updateBy`, t.`updateTime`, t.`remark`      
+    </sql>
+</mapper>
+

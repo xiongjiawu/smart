@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiongjiawu.smartaccountbook.common.dao.PayLogMapper">
+    <resultMap id="BaseResultMap" type="com.xiongjiawu.smartaccountbook.common.model.PayLog">
+        <!--收支记录 -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="userName" property="userName" jdbcType="VARCHAR"/>
+        <result column="walletType" property="walletType" jdbcType="INTEGER"/>
+        <result column="payandincomeamount" property="payandincomeamount" jdbcType="OTHER"/>
+        <result column="balance" property="balance" jdbcType="OTHER"/>
+        <result column="payandincometime" property="payandincometime" jdbcType="TIMESTAMP"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+        <result column="isValid" property="isValid" jdbcType="INTEGER"/>
+        <result column="createUser" property="createUser" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="updateUser" property="updateUser" jdbcType="VARCHAR"/>
+        <result column="updateTime" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+      `id`, `userName`, `walletType`, `payandincomeamount`, `balance`, `payandincometime`, `remark`, `isValid`, `createUser`, `createTime`, `updateUser`, `updateTime`      
+    </sql>
+    <sql id="Base_Column_List_t">
+      t.`id`, t.`userName`, t.`walletType`, t.`payandincomeamount`, t.`balance`, t.`payandincometime`, t.`remark`, t.`isValid`, t.`createUser`, t.`createTime`, t.`updateUser`, t.`updateTime`      
+    </sql>
+</mapper>
+

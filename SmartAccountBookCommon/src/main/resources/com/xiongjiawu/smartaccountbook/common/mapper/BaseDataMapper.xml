@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiongjiawu.smartaccountbook.common.dao.BaseDataMapper">
+    <resultMap id="BaseResultMap" type="com.xiongjiawu.smartaccountbook.common.model.BaseData">
+        <!--基础数据表 -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="parNode" property="parNode" jdbcType="VARCHAR"/>
+        <result column="proCode" property="proCode" jdbcType="VARCHAR"/>
+        <result column="proName" property="proName" jdbcType="VARCHAR"/>
+        <result column="sorting" property="sorting" jdbcType="INTEGER"/>
+        <result column="memo" property="memo" jdbcType="VARCHAR"/>
+        <result column="isValid" property="isValid" jdbcType="INTEGER"/>
+        <result column="createUser" property="createUser" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="updateUser" property="updateUser" jdbcType="VARCHAR"/>
+        <result column="updateTime" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+      `id`, `parNode`, `proCode`, `proName`, `sorting`, `memo`, `isValid`, `createUser`, `createTime`, `updateUser`, `updateTime`      
+    </sql>
+    <sql id="Base_Column_List_t">
+      t.`id`, t.`parNode`, t.`proCode`, t.`proName`, t.`sorting`, t.`memo`, t.`isValid`, t.`createUser`, t.`createTime`, t.`updateUser`, t.`updateTime`      
+    </sql>
+</mapper>
+
