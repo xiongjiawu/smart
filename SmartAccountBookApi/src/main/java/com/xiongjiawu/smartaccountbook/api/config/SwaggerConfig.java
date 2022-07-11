@@ -68,7 +68,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
 	@Bean
 	public ApiInfo apiInfo(){
 		return new ApiInfoBuilder()
-                .title("智慧党建与绩效考核系统  web api 接口")
+                .title("智慧账单系统  web api 接口")
                 .description("")
                 .version("1.0.0")
                 .build();

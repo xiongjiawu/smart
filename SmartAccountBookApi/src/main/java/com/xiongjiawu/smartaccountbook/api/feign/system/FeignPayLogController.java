@@ -1,20 +1,14 @@
 package com.xiongjiawu.smartaccountbook.api.feign.system;
 
-import cn.hutool.crypto.SecureUtil;
 import com.xiongjiawu.smartaccountbook.api.feign.base.FeignBaseController;
 import com.xiongjiawu.smartaccountbook.common.base.BaseResult;
-import com.xiongjiawu.smartaccountbook.common.enums.EnumUserType;
 import com.xiongjiawu.smartaccountbook.common.model.PayLog;
 import com.xiongjiawu.smartaccountbook.common.model.User;
 import com.xiongjiawu.smartaccountbook.common.service.PayLogService;
 import com.xiongjiawu.smartaccountbook.common.vo.payLog.PayLogAddEditVo;
-import com.xiongjiawu.smartaccountbook.common.vo.user.UserAddEditVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.shiro.authz.annotation.Logical;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

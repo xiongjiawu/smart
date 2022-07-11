@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TransactionAdviceConfig extends com.zhangzlyuyx.easy.mybatis.config.TransactionAdviceConfig {
 	
-	private static final String AOP_POINTCUT_EXPRESSION = "(execution(* com.xiongjiawu..service.impl.*.*(..))) or (execution(* com.sunrise..facade.impl.*.*(..)))";
-	
+	private static final String AOP_POINTCUT_EXPRESSION = "(execution(* com.xiongjiawu..service.impl.*.*(..))) or (execution(* com.xiongjiawu..facade.impl.*.*(..)))";
+
 	@Override
 	public void init() {
 		this.setAopPointcutExpression(AOP_POINTCUT_EXPRESSION);

@@ -136,7 +136,6 @@ public class ShiroConfig {
         //用户登录/注销
         filterChainDefinitionMap.put("/user/login", "anon");
         filterChainDefinitionMap.put("/user/logout", "anon");
-        filterChainDefinitionMap.put("/user/queryOrg", "anon");
 
         filterChainDefinitionMap.put("/**", "token");
 
