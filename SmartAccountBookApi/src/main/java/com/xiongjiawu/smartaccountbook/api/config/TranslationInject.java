@@ -13,7 +13,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
- * 基础数据代码、用户名、机构名称自动转义
+ * 基础数据代码、用户名自动转义
  */
 @Aspect
 @Component

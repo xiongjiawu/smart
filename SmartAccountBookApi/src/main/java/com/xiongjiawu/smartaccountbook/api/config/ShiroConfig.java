@@ -137,7 +137,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/user/login", "anon");
         filterChainDefinitionMap.put("/user/logout", "anon");
 
-        filterChainDefinitionMap.put("/**", "token");
+//        filterChainDefinitionMap.put("/**", "token");
 
         shiroFilterFactory.setFilterChainDefinitionMap(filterChainDefinitionMap);
 

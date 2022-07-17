@@ -10,10 +10,6 @@ public enum EnumTranStatus implements EnumKeyValueBase<Integer, String> {
 
 	user(1, "用户名"),
 
-	org(2, "单位/机构名"),
-
-	dept(3, "部门名")
-
 	;
 
 	private Integer key;

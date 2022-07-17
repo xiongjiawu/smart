@@ -63,8 +63,6 @@ public class TranslationUtil {
             try {
                 List<String> parNodeList = new ArrayList<>();
                 List<String> userNameList = new ArrayList<>();
-                List<String> orgCodeList = new ArrayList<>();
-                List<String> deptCodeList = new ArrayList<>();
                 for (Field field : fields) {
                     Annotation[] annotations = field.getAnnotations();
                     field.setAccessible(true);
@@ -84,10 +82,6 @@ public class TranslationUtil {
                                     }
                                 } else if (EnumTranStatus.user.getKey() == translationType) {
                                     userNameList.add(fieldCode);
-                                } else if (EnumTranStatus.org.getKey() == translationType) {
-                                    orgCodeList.add(fieldCode);
-                                } else if (EnumTranStatus.dept.getKey() == translationType) {
-                                    deptCodeList.add(fieldCode);
                                 }
                             }
                         }
